@@ -9,8 +9,8 @@ public abstract class AbstractAccount implements Account, Serializable, Cloneabl
 	
 	private static final long serialVersionUID = -2272551373694344386L;
 	
-	public static final int SAVING_ACCOUNT_TYPE = 1;
-	public static final int CHECKING_ACCOUNT_TYPE = 2;
+	protected static final int SAVING_ACCOUNT_TYPE = 1;
+	protected static final int CHECKING_ACCOUNT_TYPE = 2;
 	
 	private int id;
 	private int type;
@@ -25,7 +25,6 @@ public abstract class AbstractAccount implements Account, Serializable, Cloneabl
 	public int getType() {
 		return type;
 	}
-	
 
 	public void setType(int type) {
 		this.type = type;

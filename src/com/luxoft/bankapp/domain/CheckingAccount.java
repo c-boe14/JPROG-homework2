@@ -10,7 +10,7 @@ import com.luxoft.bankapp.utils.Params;
 public class CheckingAccount extends AbstractAccount {
 	
 	private static final long serialVersionUID = 7922392307762434334L;
-	private double overdraft;
+	public double overdraft;
 	private Currency currency;
 
 	public CheckingAccount(int id, double amount, double overdraft) {
